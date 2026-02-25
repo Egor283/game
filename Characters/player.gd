@@ -1,9 +1,9 @@
 extends CharacterBody2D
 
 
-const SPEED = 100.0
+var SPEED = 100.0
 const JUMP_VELOCITY = -400.0
-
+var kda = true
 @onready var anim = get_node("AnimatedSprite2D")
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -12,9 +12,23 @@ func _physics_process(delta: float) -> void:
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction: Vector2 = Vector2(Input.get_axis("left", "right"), 
 	Input.get_axis("up", "down")).normalized() * SPEED
-	if direction:
+	if direction and kda == true:
 		anim.play("run")
-	else:
+	elif kda == true:
 		anim.play("idle")
 	velocity = direction * SPEED * delta
+	if Input.is_action_just_pressed("attack") and kda == true:
+		kda = false
+		SPEED = 70
+		anim.play("attack")
+		await anim.animation_finished
+		kda = true
+		SPEED = 100
+		
+		
+		
+		
+		
+		
+	
 	move_and_slide()
