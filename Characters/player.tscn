@@ -181,6 +181,7 @@ animation = &"attack"
 autoplay = "idle"
 frame = 5
 frame_progress = 1.0
+flip_h = true
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1462394484]
 zoom = Vector2(3, 3)

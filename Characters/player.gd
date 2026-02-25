@@ -8,8 +8,7 @@ var kda = true
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
+	var direction2 := Input.get_axis("left", "right")
 	var direction: Vector2 = Vector2(Input.get_axis("left", "right"), 
 	Input.get_axis("up", "down")).normalized() * SPEED
 	if direction and kda == true:
@@ -17,6 +16,10 @@ func _physics_process(delta: float) -> void:
 	elif kda == true:
 		anim.play("idle")
 	velocity = direction * SPEED * delta
+	if direction2 == -1:
+		$AnimatedSprite2D.flip_h = true
+	elif direction2 == 1:
+		$AnimatedSprite2D.flip_h = false
 	if Input.is_action_just_pressed("attack") and kda == true:
 		kda = false
 		SPEED = 70
