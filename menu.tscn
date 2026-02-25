@@ -1,3 +1,44 @@
 [gd_scene format=3 uid="uid://7h11jlmeis50"]
 
-[node name="Node2D" type="Node2D" unique_id=1169478577]
+[ext_resource type="Script" uid="uid://nadgl8857r2d" path="res://menu.gd" id="1_lti8b"]
+[ext_resource type="AudioStream" uid="uid://bn55s58yo4fq0" path="res://audio/DJ_FKU_CURSEDEVIL_Skorde_-_TUCA_DONKA_VIP_SPED_UP_(SkySound.cc).mp3" id="2_ouk20"]
+
+[node name="Menu" type="Node2D" unique_id=1169478577]
+script = ExtResource("1_lti8b")
+
+[node name="Button" type="Button" parent="." unique_id=1639122852]
+offset_left = 313.0
+offset_top = 173.0
+offset_right = 818.0
+offset_bottom = 276.0
+theme_override_colors/font_color = Color(0.65845454, 0.27655658, 1, 1)
+theme_override_font_sizes/font_size = 55
+text = "PLAY"
+
+[node name="Button2" type="Button" parent="." unique_id=1535431766]
+offset_left = 314.0
+offset_top = 293.0
+offset_right = 819.0
+offset_bottom = 396.0
+theme_override_colors/font_color = Color(0.65845454, 0.27655658, 1, 1)
+theme_override_font_sizes/font_size = 55
+text = "SETTINGS"
+
+[node name="Button3" type="Button" parent="." unique_id=301478980]
+offset_left = 312.0
+offset_top = 417.0
+offset_right = 817.0
+offset_bottom = 520.0
+theme_override_colors/font_color = Color(0.65845454, 0.27655658, 1, 1)
+theme_override_font_sizes/font_size = 55
+text = "EXIT"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=13229919]
+stream = ExtResource("2_ouk20")
+autoplay = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button3" to="Button3" method="_on_pressed"]
