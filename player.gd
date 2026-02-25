@@ -1,10 +1,10 @@
 extends CharacterBody2D
 
 
-const SPEED = 300.0
+const SPEED = 100.0
 const JUMP_VELOCITY = -400.0
 
-
+@onready var anim = get_node("AnimatedSprite2D")
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	
@@ -21,10 +21,11 @@ func _physics_process(delta: float) -> void:
 		velocity.x = directionx * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+		anim.play("idle")
 	if directiony:
 		velocity.y = directiony * SPEED
 	else:
 		velocity.y = move_toward(velocity.y, 0, SPEED)
-		
+		anim.play("idle")
 
 	move_and_slide()
