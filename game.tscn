@@ -126,7 +126,7 @@ offset_left = 480.0
 offset_top = 10.0
 offset_right = 646.0
 offset_bottom = 49.0
-text = "BACK"
+text = "ESC"
 
 [node name="TileMap" type="TileMap" parent="." unique_id=920037132]
 tile_set = SubResource("TileSet_fc0e3")
