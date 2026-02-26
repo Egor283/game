@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://b20r7ucu5bo00"]
 
+[ext_resource type="Script" uid="uid://c6n61stdb67u7" path="res://game.gd" id="1_7jktm"]
 [ext_resource type="PackedScene" uid="uid://5sgy0k2htp7b" path="res://Characters/player.tscn" id="1_80nbo"]
 [ext_resource type="Script" uid="uid://b2qu4y6y54iu0" path="res://canvas_layer.gd" id="2_e2o6t"]
 [ext_resource type="Texture2D" uid="uid://djj4ybcbm7hfn" path="res://textures/mystic_woods_free_2/sprites/tilesets/plains.png" id="3_fc0e3"]
@@ -146,6 +147,7 @@ func _process(delta: float) -> void:
 "
 
 [node name="game" type="Node2D" unique_id=1170130179]
+script = ExtResource("1_7jktm")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=920037132]
 tile_set = SubResource("TileSet_fc0e3")

@@ -38,11 +38,7 @@ func _physics_process(delta):
 	else:
 		SPEED = 100
 		if stm < 100:
-			stm += 3 * delta 
-		
-		
-		
-		
-		
+			stm += delta
 	
+		
 	move_and_slide()
