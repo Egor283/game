@@ -41,6 +41,4 @@ func _physics_process(delta):
 		SPEED = 100
 		if stm < 100:
 			stm += delta
-	
-		
 	move_and_slide()
