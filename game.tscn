@@ -116,6 +116,35 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_feb5d")
 sources/2 = SubResource("TileSetAtlasSource_7jktm")
 
+[sub_resource type="GDScript" id="GDScript_fc0e3"]
+script/source = "extends Label
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	text = \"HP: \" + str($\"../../player\".hp)
+	
+"
+
+[sub_resource type="GDScript" id="GDScript_7jktm"]
+script/source = "extends Label
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	text = \"STM: \" + str($\"../../player\".stm)
+"
+
 [node name="game" type="Node2D" unique_id=1170130179]
 
 [node name="TileMap" type="TileMap" parent="." unique_id=920037132]
@@ -133,24 +162,25 @@ offset_right = 646.0
 offset_bottom = 49.0
 text = "ESC"
 
-[node name="HPlabel" type="Label" parent="CanvasLayer" unique_id=1382940506]
-offset_left = 33.0
-offset_top = 36.0
-offset_right = 186.0
-offset_bottom = 88.0
+[node name="HPL" type="Label" parent="CanvasLayer" unique_id=517617715]
+offset_left = 38.0
+offset_top = 17.0
+offset_right = 87.0
+offset_bottom = 59.0
 theme_override_font_sizes/font_size = 30
 text = "HP:"
+script = SubResource("GDScript_fc0e3")
 
-[node name="STMlabel" type="Label" parent="CanvasLayer" unique_id=1747946300]
-offset_left = 32.0
-offset_top = 88.0
-offset_right = 185.0
-offset_bottom = 140.0
+[node name="STML" type="Label" parent="CanvasLayer" unique_id=935741060]
+offset_left = 37.0
+offset_top = 61.0
+offset_right = 86.0
+offset_bottom = 103.0
 theme_override_font_sizes/font_size = 30
 text = "STM:"
+script = SubResource("GDScript_7jktm")
 
 [node name="player" parent="." unique_id=2019129503 instance=ExtResource("1_80nbo")]
-position = Vector2(198, 183)
-script = null
+position = Vector2(172, 213)
 
 [connection signal="pressed" from="CanvasLayer/Button" to="CanvasLayer" method="_on_button_pressed"]

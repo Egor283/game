@@ -1,9 +1,9 @@
 extends CharacterBody2D
-
-
 var SPEED = 100.0
 const JUMP_VELOCITY = -400.0
 var kda = true
+var hp = 100
+var stm = 100
 @onready var anim = get_node("AnimatedSprite2D")
 func _physics_process(delta):
 	# Add the gravity.
@@ -22,12 +22,11 @@ func _physics_process(delta):
 		$AnimatedSprite2D.flip_h = false
 	if Input.is_action_just_pressed("attack") and kda == true:
 		kda = false
-		SPEED = 0
 
+		SPEED = 10
 		anim.play("attack")
 		await anim.animation_finished
 		kda = true
-		SPEED = 10
 	if Input.is_action_pressed("run"):
 		if kda == false:
 			SPEED = 50
@@ -37,5 +36,11 @@ func _physics_process(delta):
 		SPEED = 50
 	else:
 		SPEED = 100
+		
+		
+		
+		
+		
+		
 	
 	move_and_slide()
