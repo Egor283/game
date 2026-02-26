@@ -36,7 +36,7 @@ func _physics_process(delta):
 	elif kda == false:
 		SPEED = 10
 		if stm < 100:
-			stm += 3 * delta 
+			stm += delta 
 	else:
 		SPEED = 100
 		if stm < 100:
