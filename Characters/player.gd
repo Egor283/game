@@ -27,13 +27,14 @@ func _physics_process(delta):
 		anim.play("attack")
 		await anim.animation_finished
 		kda = true
-	if Input.is_action_pressed("run"):
+	if Input.is_action_pressed("run") and stm > 0:
+		stm -= 10 * delta
 		if kda == false:
-			SPEED = 50
+			SPEED = 10
 		else:
 			SPEED = 130
 	elif kda == false:
-		SPEED = 50
+		SPEED = 10
 	else:
 		SPEED = 100
 		

@@ -142,7 +142,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	text = \"STM: \" + str($\"../../player\".stm)
+	text = \"STM: \" + str(round($\"../../player\".stm))
 "
 
 [node name="game" type="Node2D" unique_id=1170130179]

@@ -179,7 +179,7 @@ scale = Vector2(1.61625, 1.555)
 sprite_frames = SubResource("SpriteFrames_4flbx")
 animation = &"run"
 autoplay = "idle"
-frame_progress = 0.29636973
+frame_progress = 0.24162246
 flip_h = true
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1462394484]
