@@ -22,16 +22,10 @@ func _physics_process(delta: float) -> void:
 		$AnimatedSprite2D.flip_h = false
 	if Input.is_action_just_pressed("attack") and kda == true:
 		kda = false
-		SPEED = 70
+		SPEED = 0
 		anim.play("attack")
 		await anim.animation_finished
 		kda = true
 		SPEED = 100
-		
-		
-		
-		
-		
-		
 	
 	move_and_slide()
