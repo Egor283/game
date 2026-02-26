@@ -27,5 +27,4 @@ func _physics_process(delta: float) -> void:
 		await anim.animation_finished
 		kda = true
 		SPEED = 100
-	
 	move_and_slide()
