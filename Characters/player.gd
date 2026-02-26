@@ -37,4 +37,5 @@ func _physics_process(delta):
 		SPEED = 50
 	else:
 		SPEED = 100
+	
 	move_and_slide()
