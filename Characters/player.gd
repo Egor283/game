@@ -5,7 +5,7 @@ var SPEED = 100.0
 const JUMP_VELOCITY = -400.0
 var kda = true
 @onready var anim = get_node("AnimatedSprite2D")
-func _physics_process(delta: float) -> void:
+func _physics_process(delta):
 	# Add the gravity.
 
 	var direction2 := Input.get_axis("left", "right")
@@ -22,16 +22,18 @@ func _physics_process(delta: float) -> void:
 		$AnimatedSprite2D.flip_h = false
 	if Input.is_action_just_pressed("attack") and kda == true:
 		kda = false
-		SPEED = 70
+		SPEED = 50
 		anim.play("attack")
 		await anim.animation_finished
 		kda = true
 		SPEED = 100
-		
-		
-		
-		
-		
-		
-	
+	if Input.is_action_pressed("run"):
+		if kda == false:
+			SPEED = 50
+		else:
+			SPEED = 130
+	elif kda == false:
+		SPEED = 50
+	else:
+		SPEED = 100
 	move_and_slide()
