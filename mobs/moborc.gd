@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 var hp = 100
 var alive = true
-signal died
+signal die
 @onready var anim = $AnimatedSprite2D
 func _physics_process(delta):
 	pass
@@ -14,8 +14,8 @@ func _on_area_2d_area_entered(area):
 			if hp <= 0:
 				death()
 func death():
+	die.emit()
 	alive = false
-	died.emit()
 	anim.play("death")
 	await anim.animation_finished
 	queue_free()
