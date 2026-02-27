@@ -3,6 +3,9 @@ extends CharacterBody2D
 var hp = 100
 var alive = true
 @onready var anim = $AnimatedSprite2D
+func _physics_process(delta):
+	pass
+	
 func _on_area_2d_area_entered(area):
 	if area.name == "Attack":
 		if alive == true and hp > 0:
