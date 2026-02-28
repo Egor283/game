@@ -1,53 +1,58 @@
 [gd_scene format=3 uid="uid://dsphr47ngg70x"]
 
 [sub_resource type="GDScript" id="GDScript_icggr"]
-script/source = "extends Node2D
+script/source = "extends CanvasLayer
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
+func _input(event):
+	if event.is_action_pressed(\"esc\"):
+		# Сначала меняем состояние паузы
+		get_tree().paused = !get_tree().paused
+		# Затем один раз обновляем видимость
+		visible = get_tree().paused
 
 func _on_button_pressed() -> void:
+	get_tree().paused = false
 	get_tree().change_scene_to_file(\"res://menu.tscn\")
 
 
 func _on_button_3_pressed() -> void:
-	get_tree().change_scene_to_file(\"res://game.tscn\") # Replace with function body.
+	get_tree().paused = false
+	visible = false
+	
 "
 
-[node name="GameMenu" type="Node2D" unique_id=773436239]
+[node name="pausemenu" type="CanvasLayer" unique_id=315143684]
+process_mode = 2
 script = SubResource("GDScript_icggr")
 
-[node name="Button" type="Button" parent="." unique_id=1601523762]
-offset_left = 414.0
-offset_top = 67.0
-offset_right = 759.0
-offset_bottom = 166.0
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1657220174]
+offset_right = 1153.0
+offset_bottom = 671.0
+color = Color(0, 0, 0, 0.3019608)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1912220851]
+offset_left = -6.0
+offset_top = 10.0
+offset_right = 1151.0
+offset_bottom = 666.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=2071941903]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1601523762]
+layout_mode = 2
 theme_override_font_sizes/font_size = 55
 text = "MENU"
 
-[node name="Button2" type="Button" parent="." unique_id=1802395777]
-offset_left = 413.0
-offset_top = 197.0
-offset_right = 758.0
-offset_bottom = 296.0
+[node name="Button2" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1802395777]
+layout_mode = 2
 theme_override_font_sizes/font_size = 55
 text = "OPTIONS"
 
-[node name="Button3" type="Button" parent="." unique_id=1925245716]
-offset_left = 413.0
-offset_top = 330.0
-offset_right = 758.0
-offset_bottom = 429.0
+[node name="Button3" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1925245716]
+layout_mode = 2
 theme_override_font_sizes/font_size = 55
 text = "BACK"
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Button3" to="." method="_on_button_3_pressed"]

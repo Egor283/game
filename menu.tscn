@@ -4,6 +4,7 @@
 [ext_resource type="AudioStream" uid="uid://bn55s58yo4fq0" path="res://audio/DJ_FKU_CURSEDEVIL_Skorde_-_TUCA_DONKA_VIP_SPED_UP_(SkySound.cc).mp3" id="2_ouk20"]
 
 [node name="Menu" type="Node2D" unique_id=1169478577]
+process_mode = 3
 script = ExtResource("1_lti8b")
 
 [node name="Button" type="Button" parent="." unique_id=1639122852]
