@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://bn55s58yo4fq0"
-path="res://.godot/imported/DJ_FKU_CURSEDEVIL_Skorde_-_TUCA_DONKA_VIP_SPED_UP_(SkySound.cc).mp3-0fd21760102c587aa36b892ca92e5546.mp3str"
+path="res://.godot/imported/DJ_FKU_CURSEDEVIL_Skorde_-_TUCA_DONKA_VIP_SPED_UP_(SkySound.cc).mp3-addf9de8abf77705797c3fbe5909e039.mp3str"
 
 [deps]
 
-source_file="res://audio/DJ_FKU_CURSEDEVIL_Skorde_-_TUCA_DONKA_VIP_SPED_UP_(SkySound.cc).mp3"
-dest_files=["res://.godot/imported/DJ_FKU_CURSEDEVIL_Skorde_-_TUCA_DONKA_VIP_SPED_UP_(SkySound.cc).mp3-0fd21760102c587aa36b892ca92e5546.mp3str"]
+source_file="res://Audio/DJ_FKU_CURSEDEVIL_Skorde_-_TUCA_DONKA_VIP_SPED_UP_(SkySound.cc).mp3"
+dest_files=["res://.godot/imported/DJ_FKU_CURSEDEVIL_Skorde_-_TUCA_DONKA_VIP_SPED_UP_(SkySound.cc).mp3-addf9de8abf77705797c3fbe5909e039.mp3str"]
 
 [params]
 

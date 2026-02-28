@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://yp185hmmlvgf"
-path="res://.godot/imported/qaraqshy_MC_LONE_-_z-beta_2_(mp3.pm).mp3-8a64e945601c8ad480bc0cd5c6c7bd06.mp3str"
+path="res://.godot/imported/qaraqshy_MC_LONE_-_z-beta_2_(mp3.pm).mp3-ff3518dea15d492caae8913d00ff5f7e.mp3str"
 
 [deps]
 
-source_file="res://audio/qaraqshy_MC_LONE_-_z-beta_2_(mp3.pm).mp3"
-dest_files=["res://.godot/imported/qaraqshy_MC_LONE_-_z-beta_2_(mp3.pm).mp3-8a64e945601c8ad480bc0cd5c6c7bd06.mp3str"]
+source_file="res://Audio/qaraqshy_MC_LONE_-_z-beta_2_(mp3.pm).mp3"
+dest_files=["res://.godot/imported/qaraqshy_MC_LONE_-_z-beta_2_(mp3.pm).mp3-ff3518dea15d492caae8913d00ff5f7e.mp3str"]
 
 [params]
 
