@@ -168,8 +168,12 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_65n15"]
-radius = 20.0
-height = 78.0
+radius = 15.0
+height = 32.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_l48on"]
+radius = 15.0
+height = 32.0
 
 [node name="player" type="CharacterBody2D" unique_id=2019129503]
 script = ExtResource("1_onrkg")
@@ -178,11 +182,13 @@ script = ExtResource("1_onrkg")
 shape = SubResource("CapsuleShape2D_sh265")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=277239615]
-position = Vector2(1, 2)
+position = Vector2(0, 2)
 scale = Vector2(2.0290625, 1.81875)
 sprite_frames = SubResource("SpriteFrames_4flbx")
-animation = &"idle"
+animation = &"attack"
 autoplay = "idle"
+frame = 5
+frame_progress = 1.0
 flip_h = true
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1462394484]
@@ -195,7 +201,14 @@ drag_vertical_enabled = true
 
 [node name="Attack" type="Area2D" parent="." unique_id=371237732]
 
-[node name="attackzone" type="CollisionShape2D" parent="Attack" unique_id=1312701445]
+[node name="attackzonel" type="CollisionShape2D" parent="Attack" unique_id=1312701445]
+position = Vector2(-21, 3)
 rotation = -1.5707964
 shape = SubResource("CapsuleShape2D_65n15")
+disabled = true
+
+[node name="attackzoner" type="CollisionShape2D" parent="Attack" unique_id=2070789368]
+position = Vector2(22, 2)
+rotation = -1.5707964
+shape = SubResource("CapsuleShape2D_l48on")
 disabled = true

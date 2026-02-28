@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://c17f1gnqcwn7k" path="res://textures/mystic_woods_free_2/sprites/tilesets/fences.png" id="3_feb5d"]
 [ext_resource type="PackedScene" uid="uid://dnrtuui6fqds2" path="res://spawner_orc.tscn" id="6_ryrav"]
 [ext_resource type="PackedScene" uid="uid://dsphr47ngg70x" path="res://game_menu.tscn" id="8_j5wjh"]
+[ext_resource type="AudioStream" uid="uid://yp185hmmlvgf" path="res://audio/qaraqshy_MC_LONE_-_z-beta_2_(mp3.pm).mp3" id="8_vef74"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_feb5d"]
 texture = ExtResource("3_feb5d")
@@ -187,3 +188,9 @@ position = Vector2(172, 213)
 
 [node name="spawner_orc" parent="." unique_id=1768530975 instance=ExtResource("6_ryrav")]
 process_mode = 0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=348141427]
+process_mode = 3
+stream = ExtResource("8_vef74")
+volume_db = -12.745
+autoplay = true
