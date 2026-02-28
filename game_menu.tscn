@@ -26,15 +26,15 @@ process_mode = 2
 script = SubResource("GDScript_icggr")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1657220174]
-offset_right = 1153.0
-offset_bottom = 671.0
+offset_right = 1930.0
+offset_bottom = 1098.0
 color = Color(0, 0, 0, 0.3019608)
 
 [node name="CenterContainer" type="CenterContainer" parent="." unique_id=1912220851]
 offset_left = -6.0
 offset_top = 10.0
-offset_right = 1151.0
-offset_bottom = 666.0
+offset_right = 1931.0
+offset_bottom = 1080.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=2071941903]
 layout_mode = 2
