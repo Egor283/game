@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vsrw0fom2whc"
-path="res://.godot/imported/skull_v1_1.png-4cbf67bb06f407ba4c18a94f9be1cb42.ctex"
+path="res://.godot/imported/skull_v1_1.png-3c981e98ed9fd44a574e5c40852f791d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/2D Pixel Dungeon Asset Pack/Character_animation/monsters_idle/skull/v1/skull_v1_1.png"
-dest_files=["res://.godot/imported/skull_v1_1.png-4cbf67bb06f407ba4c18a94f9be1cb42.ctex"]
+source_file="res://textures/2D Pixel Dungeon Asset Pack/Character_animation/monsters_idle/skull/v1/skull_v1_1.png"
+dest_files=["res://.godot/imported/skull_v1_1.png-3c981e98ed9fd44a574e5c40852f791d.ctex"]
 
 [params]
 

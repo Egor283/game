@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxhfqby8he2q"
-path="res://.godot/imported/water5.png-459059e69676af8cc9d7ff3e41367552.ctex"
+path="res://.godot/imported/water5.png-12160a3cab1abdbaf0d5fb710b5d87df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/mystic_woods_free_2/sprites/tilesets/water5.png"
-dest_files=["res://.godot/imported/water5.png-459059e69676af8cc9d7ff3e41367552.ctex"]
+source_file="res://textures/mystic_woods_free_2/sprites/tilesets/water5.png"
+dest_files=["res://.godot/imported/water5.png-12160a3cab1abdbaf0d5fb710b5d87df.ctex"]
 
 [params]
 

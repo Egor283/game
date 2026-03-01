@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bkm7r5eto7t5t"
-path="res://.godot/imported/arrow_4.png-e041690def515d93d33fee1eaa6e8735.ctex"
+path="res://.godot/imported/arrow_4.png-f0d0bf298bc2789f20f29375e93f6f1e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/2D Pixel Dungeon Asset Pack/items and trap_animation/arrow/arrow_4.png"
-dest_files=["res://.godot/imported/arrow_4.png-e041690def515d93d33fee1eaa6e8735.ctex"]
+source_file="res://textures/2D Pixel Dungeon Asset Pack/items and trap_animation/arrow/arrow_4.png"
+dest_files=["res://.godot/imported/arrow_4.png-f0d0bf298bc2789f20f29375e93f6f1e.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0jfw0e28djk0"
-path="res://.godot/imported/tileset x2.png-907b7a0a298c608457064125054eb29e.ctex"
+path="res://.godot/imported/tileset x2.png-4a114ecf90d800660c1c7824030b4c7e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Tech Dungeon Roguelite - Asset Pack (DEMO)/tileset x2.png"
-dest_files=["res://.godot/imported/tileset x2.png-907b7a0a298c608457064125054eb29e.ctex"]
+source_file="res://textures/Tech Dungeon Roguelite - Asset Pack (DEMO)/tileset x2.png"
+dest_files=["res://.godot/imported/tileset x2.png-4a114ecf90d800660c1c7824030b4c7e.ctex"]
 
 [params]
 

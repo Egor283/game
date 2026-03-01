@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxq7t6ysvbu0u"
-path="res://.godot/imported/priest1_v1_2.png-569b432beb0b5a7603abae9459367f37.ctex"
+path="res://.godot/imported/priest1_v1_2.png-3f89b3306aaa5df0cd7cbe97bb320948.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v1/priest1_v1_2.png"
-dest_files=["res://.godot/imported/priest1_v1_2.png-569b432beb0b5a7603abae9459367f37.ctex"]
+source_file="res://textures/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v1/priest1_v1_2.png"
+dest_files=["res://.godot/imported/priest1_v1_2.png-3f89b3306aaa5df0cd7cbe97bb320948.ctex"]
 
 [params]
 

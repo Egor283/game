@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://36n17ga4ixcx"
-path="res://.godot/imported/square_left_3.png-546cd6657bf6e7ed71319eac23dec495.ctex"
+path="res://.godot/imported/square_left_3.png-7de68f85fad400cea2bc43901bde063d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/2D Pixel Dungeon Asset Pack/interface/square_left_3.png"
-dest_files=["res://.godot/imported/square_left_3.png-546cd6657bf6e7ed71319eac23dec495.ctex"]
+source_file="res://textures/2D Pixel Dungeon Asset Pack/interface/square_left_3.png"
+dest_files=["res://.godot/imported/square_left_3.png-7de68f85fad400cea2bc43901bde063d.ctex"]
 
 [params]
 

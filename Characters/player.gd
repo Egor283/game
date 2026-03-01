@@ -16,9 +16,9 @@ func _physics_process(delta):
 	elif kda == true:
 		anim.play("idle")
 	velocity = direction * SPEED * delta
-	if direction2 == -1:
+	if direction2 == -1 and kda == true:
 		$AnimatedSprite2D.flip_h = true
-	elif direction2 == 1:
+	elif direction2 == 1 and kda == true:
 		$AnimatedSprite2D.flip_h = false
 	if Input.is_action_just_pressed("attack") and kda == true and $AnimatedSprite2D.flip_h == true:
 		$Attack/attackzonel.disabled = false

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xwwclng2k7sn"
-path="res://.godot/imported/Soldier-Death.png-ef893ce607b56e48d86a62dce1c59db6.ctex"
+path="res://.godot/imported/Soldier-Death.png-b1c6d7acd4f8c4715af2afc4428069ca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier with shadows/Soldier-Death.png"
-dest_files=["res://.godot/imported/Soldier-Death.png-ef893ce607b56e48d86a62dce1c59db6.ctex"]
+source_file="res://textures/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier with shadows/Soldier-Death.png"
+dest_files=["res://.godot/imported/Soldier-Death.png-b1c6d7acd4f8c4715af2afc4428069ca.ctex"]
 
 [params]
 
