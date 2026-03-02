@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dl8w476g2miea"
-path="res://.godot/imported/skeleton_swordless.png-879d5bff90467176b9275d8491f4fcf5.ctex"
+path="res://.godot/imported/skeleton_swordless.png-10cfc84cf0ed690cea90119f4525563c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/mystic_woods_free_2/sprites/characters/skeleton_swordless.png"
-dest_files=["res://.godot/imported/skeleton_swordless.png-879d5bff90467176b9275d8491f4fcf5.ctex"]
+source_file="res://Textures/mystic_woods_free_2/sprites/characters/skeleton_swordless.png"
+dest_files=["res://.godot/imported/skeleton_swordless.png-10cfc84cf0ed690cea90119f4525563c.ctex"]
 
 [params]
 

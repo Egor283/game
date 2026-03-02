@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyfrk1gkhwn8r"
-path="res://.godot/imported/Orc-Attack01.png-1c85998a917e64d0f96703e314d3ad68.ctex"
+path="res://.godot/imported/Orc-Attack01.png-0a906dc2b60fc0e3ee8acb5e21edd945.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc/Orc with shadows/Orc-Attack01.png"
-dest_files=["res://.godot/imported/Orc-Attack01.png-1c85998a917e64d0f96703e314d3ad68.ctex"]
+source_file="res://Textures/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc/Orc with shadows/Orc-Attack01.png"
+dest_files=["res://.godot/imported/Orc-Attack01.png-0a906dc2b60fc0e3ee8acb5e21edd945.ctex"]
 
 [params]
 
