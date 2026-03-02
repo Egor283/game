@@ -1,0 +1,139 @@
+[gd_scene format=3 uid="uid://dkocqoaio4cfo"]
+
+[ext_resource type="Script" uid="uid://bd4g2a0fq4gqm" path="res://mobs/moborc.gd" id="1_icai7"]
+[ext_resource type="Texture2D" uid="uid://bq6gpj77f52w4" path="res://textures/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc/Orc/Orc-Idle.png" id="1_ii7op"]
+[ext_resource type="Texture2D" uid="uid://cpnyph3thfqlx" path="res://textures/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc/Orc/Orc-Death.png" id="2_wl21o"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_28xw3"]
+radius = 13.0
+height = 36.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tf0un"]
+atlas = ExtResource("2_wl21o")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tt3dv"]
+atlas = ExtResource("2_wl21o")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c2e30"]
+atlas = ExtResource("2_wl21o")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5p6vg"]
+atlas = ExtResource("2_wl21o")
+region = Rect2(300, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_icai7"]
+atlas = ExtResource("1_ii7op")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wl21o"]
+atlas = ExtResource("1_ii7op")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ust67"]
+atlas = ExtResource("1_ii7op")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b5yk2"]
+atlas = ExtResource("1_ii7op")
+region = Rect2(300, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0b0cy"]
+atlas = ExtResource("1_ii7op")
+region = Rect2(400, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cttwo"]
+atlas = ExtResource("1_ii7op")
+region = Rect2(500, 0, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tf0un"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tf0un")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tt3dv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c2e30")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5p6vg")
+}],
+"loop": false,
+"name": &"death",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_icai7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wl21o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ust67")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b5yk2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0b0cy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cttwo")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 7.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_icai7"]
+radius = 18.0
+height = 36.0
+
+[sub_resource type="GDScript" id="GDScript_wl21o"]
+script/source = "extends Label
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	text = str($\"..\".hp)
+"
+
+[node name="moborc" type="CharacterBody2D" unique_id=2110860237]
+script = ExtResource("1_icai7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=282732695]
+shape = SubResource("CapsuleShape2D_28xw3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1019747111]
+position = Vector2(0, 1)
+scale = Vector2(2.0224998, 1.7899998)
+sprite_frames = SubResource("SpriteFrames_tf0un")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="Area2D" type="Area2D" parent="." unique_id=181482576]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1415555707]
+position = Vector2(-1, 1)
+shape = SubResource("CapsuleShape2D_icai7")
+
+[node name="HPorc" type="Label" parent="." unique_id=117394272]
+offset_left = -10.0
+offset_top = -35.0
+offset_right = 30.0
+offset_bottom = -12.0
+text = "HP"
+script = SubResource("GDScript_wl21o")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
