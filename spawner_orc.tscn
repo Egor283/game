@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dnrtuui6fqds2"]
+
+[ext_resource type="Script" uid="uid://bb7wer4sxuqss" path="res://spawner_orc.gd" id="1_xpn0l"]
+[ext_resource type="PackedScene" uid="uid://dkocqoaio4cfo" path="res://mobs/moborc.tscn" id="2_rtgoi"]
+
+[node name="spawner_orc" type="Node2D" unique_id=1768530975]
+process_mode = 3
+script = ExtResource("1_xpn0l")
+mob_scene = ExtResource("2_rtgoi")
+
+[node name="Timer" type="Timer" parent="." unique_id=451354458]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
